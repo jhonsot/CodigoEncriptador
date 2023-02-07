@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>CODIGO SECRETO</title>
+  </head>
+
+  <body>
+    <header class="logo1">
+      <div class="imagen-logo">
+        <img src="./assets/img/Logo.png" alt="logo de alura" />
+      </div>
+    </header>
+
+    <main>
+      <section class="section1">
+        <textarea
+          class="zona-de-texto"
+          id="texto1"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div>
+          <h2 class="informacion"><img src="./assets/img/Vector.png"> solo letras minúsculas y sin acentos</h2>
+        </div>
+        <div class="buttons">
+          <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="imagen2">
+          <img src="./assets/img/Muñeco.png" id="imagengrande" alt="" />
+        </div>
+
+        <div class="mensaje">
+          <h3 id="texto2">Ningún mensaje fue encontrado</h3>
+          <p id="texto3">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div id="textoEncriptado"></div>
+        <div>
+          <button class="copiar" id="botoncopiar" onclick="copiar()">
+            Copiar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy Copyright Jhon Deivy Soto</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

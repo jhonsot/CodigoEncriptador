@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+.imagen-logo {
+  margin: 20px 0 0 20px;
+}
+
+main {
+  width: 95%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1 {
+  width: 60%;
+  margin-left: 60px;
+}
+
+.zona-de-texto {
+  width: 90%;
+  height: 60%;
+  margin: auto;
+  color: #0a3871;
+  display: block;
+  resize: none;
+  font-size: 25px;
+  margin-top: 40px;
+  border-radius: 14px;
+  border: 0;
+  outline: 0;
+}
+::placeholder {
+  color: #0a3871;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.informacion {
+  color: #0a3871;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 18px;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.encriptar {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  flex: 1 1 auto;
+}
+
+.desencriptar {
+  background-color: #c0c0c0;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  flex: 1 1 auto;
+}
+
+.section2 {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.imagen2 {
+  width: 336px;
+  height: 304px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.mensaje {
+  width: 336px;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  margin: auto;
+}
+
+.texto {
+  text-align: center;
+}
+
+#textoEncriptado {
+  height: 60%;
+  width: 100%;
+  margin-top: 50px;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.copiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .section1 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .section2 {
+    width: 80%;
+    min-height: 500px;
+    margin: 50px auto;
+  }
+
+  .imagen2,
+  .mensaje,
+  #textoEncriptado {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  #textoEncriptado {
+    margin-top: 30px;
+  }
+
+  .imagen2 img {
+    width: 270px;
+    object-fit: cover;
+  }
+
+  .copiar {
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 50%;
+    position: absolute;
+    bottom: 50px;
+  }
+}
